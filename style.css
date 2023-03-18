@@ -2,14 +2,18 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  font-family: "poppins";
+  color: rgb(217, 217, 218);
 }
 html,
 body {
   width: 100%;
   overflow-x: hidden;
+}
+img {
+  max-width: 100%;
+  height: auto !important;
 }
 body {
   overflow-x: hidden;
@@ -22,6 +26,9 @@ body {
     #0079c9
   );
   scroll-behavior: smooth;
+}
+p {
+  margin: 0;
 }
 body::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
@@ -65,6 +72,7 @@ body::-webkit-scrollbar-thumb {
 
 .nav-link {
   position: relative;
+  opacity: 0.8;
 }
 
 .nav-link:hover {
@@ -76,7 +84,7 @@ body::-webkit-scrollbar-thumb {
   height: 3px;
   content: "";
   position: absolute;
-  background-color: black;
+  background-color: rgb(3, 127, 252);
 }
 
 .nav-link::before {
@@ -93,7 +101,7 @@ body::-webkit-scrollbar-thumb {
   margin: 20px;
   height: auto;
   width: 30%;
-  background: rgb(255, 255, 255);
+  background: rgba(48, 48, 48, 0.122);
 }
 
 #logo-iete {
@@ -133,20 +141,17 @@ body::-webkit-scrollbar-thumb {
   margin: 3rem 1rem 1rem 1rem;
 }
 
-#text_svce {
-  font-size: 40px;
-  color: #edf5e1;
-  padding: 1rem 1rem;
-  margin: 10px 10px;
+#text1 {
+  font-size: 3rem;
+  font-family: "poppins";
+  padding: 0rem 2rem;
+  font-weight: bolder;
 }
 .navbar {
   height: 15%;
 }
-#text_ece {
-  font-size: 30px;
-  color: #edf5e1;
-  padding: 1rem 1rem;
-  margin: 10px 10px;
+#text2 {
+  font-size: 2rem;
 }
 
 #text_iete {
@@ -240,8 +245,10 @@ hr {
 }
 
 #abouted {
+  justify-content: center;
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
 #img-abt {
@@ -258,9 +265,18 @@ hr {
   color: #edf5e1;
 }
 
-#abt-txt {
-  color: #edf5e1;
-  margin-top: -25px;
+#text3 {
+  background: linear-gradient(
+    10.6deg,
+    #084066,
+    rgb(67, 71, 99) 1.5%,
+    #285d80,
+    #091217
+  );
+  padding: 2rem;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  box-shadow: inset 0 0 0 0.1rem rgb(0, 0, 0);
 }
 
 #content {
@@ -531,18 +547,12 @@ time {
 }
 /* .fluid-container {
 } */
-.fluid-container p {
-  color: rgb(0, 0, 0) !important;
-  /* margin: 20px !important; */
-}
 .text_container {
-  background: white;
-  opacity: 0.4;
-  margin: 2rem 150px !important;
+  background: rgba(96, 94, 94, 0.4);
+  margin: 1rem 0;
 }
 .navbar {
-  background-color: #000000;
-  opacity: 0.4;
+  background-color: rgb(0, 0, 0, 0.4);
 }
 @keyframes scaleAnimation {
   0% {
@@ -596,7 +606,7 @@ time {
       height: auto;
     }
 
-    #abt-txt{
+    #text3{
       font-size: 15px;
       margin-top: -40px;
       color: #edf5e1;
@@ -638,16 +648,15 @@ time {
     height: auto;
   }
 
-  #text_svce {
+  /* #text1 {
     font-size: 30px;
     color: #edf5e1;
     padding: 0.5rem 0.5px;
     margin: 10px 10px;
-  }
+  } */
 
-  #text_ece {
-    font-size: 25px;
-    color: #edf5e1;
+  #text2 {
+    font-size: 1.8rem;
   }
 
   #text_iete {
@@ -678,8 +687,10 @@ time {
   }
 
   #abouted {
+    justify-content: center;
     display: flex;
     flex-direction: row;
+    justify-content: center;
   }
 
   .time-content {
@@ -745,10 +756,8 @@ time {
     margin-bottom: 70px;
   }
 
-  #abt-txt {
-    font-size: 14px;
-    color: #edf5e1;
-    margin-top: -20px;
+  #text3 {
+    font-size: 1.2rem;
   }
 
   #btn-abt {
@@ -825,16 +834,15 @@ time {
     height: auto;
   }
 
-  #text_svce {
+  /* #text1 {
     font-size: 45px;
     color: #edf5e1;
     padding: 0.5rem 0.5px;
     margin: 10px 10px;
-  }
+  } */
 
-  #text_ece {
-    font-size: 32px;
-    color: #edf5e1;
+  #text2 {
+    font-size: 1.7rem;
   }
 
   #text_iete {
@@ -878,6 +886,7 @@ time {
   }
 
   #abouted {
+    justify-content: center;
     display: flex;
     flex-direction: row;
   }
@@ -923,10 +932,8 @@ time {
     color: #edf5e1;
   }
 
-  #abt-txt {
-    margin-top: -40px;
-    font-size: 12px;
-    color: #edf5e1;
+  #text3 {
+    font-size: 1rem;
   }
 
   #img-abt {
@@ -1005,16 +1012,12 @@ time {
     width: 90px;
   }
 
-  #text_svce {
-    font-size: 35px;
-    color: #edf5e1;
-    padding: 0.5rem 0.5px;
-    margin: 10px 10px;
+  #text1 {
+    font-size: 2rem;
   }
 
-  #text_ece {
-    font-size: 25px;
-    color: #edf5e1;
+  #text2 {
+    font-size: 1.6rem;
   }
 
   #text_iete {
@@ -1087,6 +1090,7 @@ time {
   }
 
   #abouted {
+    justify-content: center;
     display: flex;
     flex-direction: column;
   }
@@ -1095,11 +1099,8 @@ time {
     min-width: 500px;
   }
 
-  #abt-txt {
-    font-size: 15px;
-    padding-top: 30px;
-    color: #edf5e1;
-    margin-top: -60px;
+  #text3 {
+    font-size: 1rem;
   }
 
   #btn-abt {
@@ -1187,16 +1188,12 @@ time {
     position: relative;
   }
 
-  #text_svce {
-    font-size: 40px;
-    color: #edf5e1;
-    padding: 0.5rem 0.5px;
-    margin: 10px 10px;
+  #text1 {
+    font-size: 1.8rem;
   }
 
-  #text_ece {
-    font-size: 30px;
-    color: #edf5e1;
+  #text2 {
+    font-size: 1.4rem;
   }
 
   #text_iete {
@@ -1276,6 +1273,7 @@ time {
   }
 
   #abouted {
+    justify-content: center;
     display: flex;
     flex-direction: column;
   }
@@ -1284,11 +1282,8 @@ time {
     min-width: 400px;
   }
 
-  #abt-txt {
-    margin-top: 20px;
-    font-size: 15px;
-    color: #edf5e1;
-    margin-top: -50px;
+  #text3 {
+    font-size: 1rem;
   }
 
   #btn-abt {
@@ -1372,16 +1367,12 @@ time {
     position: relative;
   }
 
-  #text_svce {
-    font-size: 20px;
-    color: #edf5e1;
-    padding: 0.5rem 0.5px;
-    margin: 10px 10px;
+  #text1 {
+    font-size: 1.3rem;
   }
 
-  #text_ece {
-    font-size: 15px;
-    color: #edf5e1;
+  #text2 {
+    font-size: 0.9rem;
   }
 
   #text_iete {
@@ -1447,6 +1438,7 @@ time {
   }
 
   #abouted {
+    justify-content: center;
     display: flex;
     flex-direction: column;
   }
@@ -1477,10 +1469,8 @@ time {
     font-size: 20px;
   }
 
-  #abt-txt {
-    font-size: 15px;
-    margin-top: -60px;
-    color: #edf5e1;
+  #text3 {
+    font-size: 0.9rem;
   }
 
   #btn-abt {
@@ -1532,9 +1522,8 @@ time {
     width: 600px;
     height: auto;
   }
-  #abt-txt {
+  #text3 {
     font-size: 15px;
-    color: #edf5e1;
   }
 
   #btn-abt {
@@ -1579,17 +1568,15 @@ time {
     margin-top: -30px;
   } */
 
-  #text_svce {
+  #text1 {
     font-size: 18px;
-    color: #edf5e1;
     padding: 0.1rem 0.5px;
     margin: 12px 10px;
     padding-top: 10px;
   }
 
-  #text_ece {
-    font-size: 14px;
-    color: #edf5e1;
+  #text2 {
+    font-size: 0.6rem;
   }
 
   #text_iete {
@@ -1676,6 +1663,7 @@ time {
   }
 
   #abouted {
+    justify-content: center;
     display: flex;
     flex-direction: column;
   }
@@ -1689,7 +1677,7 @@ time {
     padding: 50px 10px 10px 10px;
   }
 
-  #abt-txt {
+  #text3 {
     font-size: 12px;
     width: 100%;
     margin-top: -30px;
@@ -1773,7 +1761,7 @@ time {
     height: auto;
   }
 
-  #abt-txt {
+  #text3 {
     font-size: 12px;
   }
 
