@@ -5,120 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <style>
-      .mainSquare {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        width: 500px;
-        height: 500px;
-        border: 2px solid black;
-      }
-      .event {
-        padding: 0px 100px;
-        border: 2px solid black;
-      }
-      .event1Click {
-        position: relative;
-        z-index: 1;
-        animation: anim 1s ease-in;
-        transform-origin: top left;
-        background-color: red;
-        transition: all 0.5s ease-in-out;
-      }
-      .event1 {
-      }
-      .event2:hover {
-        position: relative;
-        top: 0;
-        left: 0;
-        z-index: 1;
-        transform: scale(2);
-        transform-origin: top right;
-        background-color: blue;
-        transition: all 0.5s ease-in-out;
-      }
-      @keyframes anim {
-        0% {
-          transform: scale(1);
-        }
-        25% {
-          transform: scale(2);
-        }
-        100% {
-          transform: scale(4);
-          /* transform: scale(2); */
-        }
-      }
-      .event3:hover {
-        position: relative;
-        top: 0;
-        left: 0;
-        z-index: 1;
-        transform: scale(2);
-        transform-origin: bottom left;
-        background-color: green;
-        transition: all 0.5s ease-in-out;
-      }
-      .event4:hover {
-        position: relative;
-        top: 0;
-        left: 0;
-        z-index: 1;
-        transform: scale(2);
-        transform-origin: bottom right;
-        background-color: yellow;
-        transition: all 0.5s ease-in-out;
-      }
-      .expanded {
-        display: none;
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%) rotateY(180deg);
-        width: 80%;
-        height: 80%;
-        z-index: 3;
-        /* background-color: white; */
-        transition: all 0.5s ease-in-out;
-      }
-
-      .event:hover .expanded {
-        transform: translate(-50%, -50%) rotateY(0deg);
-      }
-
-      .eventContainer {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-      }
-    </style>
+    <link rel="stylesheet" href="./styles/event.css" />
   </head>
   <body>
-    <div class="eventContainer">
-      <div class="mainSquare">
-        <div class="event1 event">
-          Event 1
-          <div class="expanded">
-            <h2>Event 1 Details</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-              sit amet massa vel mauris tristique vestibulum vitae sed arcu.
-              Vestibulum bibendum massa vel eros rhoncus, at posuere dolor
-              scelerisque.
-            </p>
-          </div>
+    <div class="eventCont">
+      <div class="button" id="button-1">Button 1</div>
+      <div class="button" id="button-2">Button 2</div>
+      <div class="button" id="button-3">Button 3</div>
+      <div class="button" id="button-4">Button 4</div>
+    </div>
+    <div class="popup-container" id="popup">
+      <div class="popup-content">
+        <div class="popup-header">
+          <div class="popup-title"></div>
+          <button class="popup-close">X</button>
         </div>
-        <div class="event2 event">Event 2</div>
-        <div class="event3 event">Event 3</div>
-        <div class="event4 event">Event 4</div>
+        <div class="popup-body"></div>
       </div>
     </div>
   </body>
-  <script>
-    document.querySelector(".event1").addEventListener("click", () => {
-      document.querySelector(".event1").classList.toggle("event1Click");
-    });
-  </script>
+  <script src="./script/event.js"></script>
 </html>

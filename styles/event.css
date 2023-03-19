@@ -1,0 +1,129 @@
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+  background: linear-gradient(
+    10.6deg,
+    #084066,
+    rgb(67, 71, 99) 1.5%,
+    #285d80,
+    #091217
+  );
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  cursor: pointer;
+  margin: 5px;
+  width: 600px;
+  border-radius: 5px;
+  box-shadow: #084066 0px 0px 10px 0px;
+}
+.eventNames {
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  width: 75%;
+  height: 500px;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+.eventCont {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.eventCont h1 {
+  font-size: 50px;
+  color: #084066;
+  font-weight: 900;
+  border-bottom: 2px solid black;
+  background-color: #0079c9;
+}
+.popup-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  animation: fade-in 0.5s ease-in-out;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.popup-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 80%;
+  background-color: white;
+}
+
+.popup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 10%;
+  background: linear-gradient(
+    10.6deg,
+    #084066,
+    rgb(136, 139, 164) 1.5%,
+    #285d80,
+    #091217
+  );
+  color: white;
+  font-size: 24px;
+  padding: 10px;
+}
+
+.popup-title {
+  flex: 1;
+  text-align: center;
+}
+
+.popup-body {
+  flex: 1;
+  padding: 10px;
+  background-color: #e1e1e1;
+  color: #084066;
+  font-size: 18px;
+}
+
+.popup-close {
+  border: none;
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  cursor: pointer;
+}
