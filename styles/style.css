@@ -1,9 +1,21 @@
+@font-face {
+  font-family: "prime";
+  src: url(./../fonts/PrimeRegular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "polaris";
+  src: url(./../fonts/Polaris.otf) format("opentype");
+}
+@font-face {
+  font-family: "alixa";
+  src: url(./../fonts/AlixaBold-lg04Z.ttf) format("truetype");
+}
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   text-decoration: none;
-  font-family: "poppins";
+  font-family: "polaris";
   color: rgb(217, 217, 218);
 }
 html,
@@ -139,8 +151,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 #text1 {
+  font-family: "alixa";
   font-size: 2.8rem;
-  font-family: "poppins";
   padding: 0rem 2rem;
   font-weight: bolder;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
@@ -149,7 +161,8 @@ body::-webkit-scrollbar-thumb {
   height: 15%;
 }
 #text2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
+  margin: 30px;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
@@ -222,7 +235,7 @@ hr {
   margin: 3rem 1rem;
 }
 
-#about {
+.eventCont {
   background: url(./../images/bg1.png);
   background-size: cover;
   object-fit: contain;
@@ -266,15 +279,17 @@ hr {
   border-radius: 5px;
   font-size: 1.2rem;
 }
+
 #text4 {
-  font-size: 2rem;
-  font-family: "Helvetica Neue";
+  font-size: 2.6rem;
+  font-family: "prime";
   opacity: 0.8;
   position: relative;
-  color: #cfc547;
+  color: #0eafff;
+  letter-spacing: 0.1em;
+  text-shadow: 3px 3px #1f57ff, 4px 4px #000000;
 
-  text-shadow: -1px 1px 0 #41ba45, 1px 1px 0 #c63d2b, 1px -1px 0 #42afac,
-    -1px -1px 0 #fff700;
+  text-shadow: 1px -1px 0 #42afac, -1px -1px 0 #0eafff;
 }
 #content {
   font-size: 15px;
@@ -559,7 +574,7 @@ time {
 } */
 .text_container {
   position: relative;
-  padding: 0 10rem 10rem;
+  padding: 0 10rem 8rem;
   background: rgba(96, 94, 94, 0.4);
   margin: 4rem 0;
   border-radius: 20px;
@@ -633,6 +648,9 @@ time {
     width: 100%;
     overflow-x: hidden;
   }
+  .text4 {
+    font-size: 1rem;
+  }
   .fluid-container {
     color: #fff;
     margin: 0.5rem 1rem;
@@ -659,11 +677,11 @@ time {
   }
 
   #text1 {
-    font-size: 2.7rem;
+    font-size: 2.4rem;
   }
 
   #text2 {
-    font-size: 1.8rem;
+    font-size: 1.3rem;
   }
 
   #text_iete {
@@ -819,7 +837,9 @@ time {
     align-items: center;
     position: relative;
   }
-
+  #text4 {
+    font-size: 2rem;
+  }
   #svceLogo {
     width: 30%;
   }
@@ -833,13 +853,17 @@ time {
   }
 
   #text1 {
-    font-size: 2.3rem;
+    font-size: 2rem;
   }
 
   #text2 {
     font-size: 1.7rem;
   }
-
+  .eventInfo span {
+    font-size: 0.9rem;
+  }
+  .eventInfo i:nth-child(2) {
+  }
   #text_iete {
     font-size: 32px;
     color: #edf5e1;
@@ -971,7 +995,7 @@ time {
   }
 }
 
-@media screen and (min-width: 955px) and (max-width: 1095px) {
+@media screen and (min-width: 900px) and (max-width: 992px) {
   .fluid-container {
     background-color: none;
     color: #fff;
@@ -985,7 +1009,9 @@ time {
     align-items: center;
     position: relative;
   }
-
+  #text4 {
+    font-size: 1.6rem;
+  }
   #svceLogo {
     width: 30%;
   }
@@ -1032,6 +1058,9 @@ time {
   .time-content {
     padding-right: 10px;
     padding-left: 10px;
+  }
+  .eventInfo span {
+    font-size: 0.8rem;
   }
 
   #days,
@@ -1129,7 +1158,7 @@ time {
   }
 }
 
-@media (min-width: 769px) and (max-width: 954px) {
+@media (min-width: 769px) and (max-width: 900px) {
   html,
   body {
     width: 100%;
@@ -1139,7 +1168,9 @@ time {
   #navbarNav {
     padding-top: 20px;
   }
-
+  #text4 {
+    font-size: 1.6rem;
+  }
   #svceLogo {
     height: 100px;
     width: 90px;
@@ -1155,7 +1186,9 @@ time {
   #main {
     height: auto;
   }
-
+  .eventInfo span {
+    font-size: 0.6rem;
+  }
   .fluid-container {
     background-color: none;
     color: #fff;
@@ -1171,7 +1204,7 @@ time {
   }
 
   #text1 {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
 
   #text2 {
@@ -1324,7 +1357,9 @@ time {
     height: 90px;
     width: 90px;
   }
-
+  .eventInfo span {
+    font-size: 0.4rem;
+  }
   .fluid-container {
     background-color: none;
     color: #fff;
@@ -1340,16 +1375,15 @@ time {
   }
 
   #text1 {
-    font-size: 1.2rem;
+    font-size: 0.95rem;
   }
 
   #text2 {
+    margin: 10px;
     font-size: 0.7rem;
   }
   #text4 {
-    font-size: 1rem;
-    text-shadow: -0.5px 0.5px 0 #41ba45, 0.5px 0.5px 0 #c63d2b,
-      0.5px -0.5px 0 #42afac, -0.5px -0.5px 0 #fff700;
+    font-size: 1.3rem;
   }
   .eventInfo i {
     font-size: 0.7rem;

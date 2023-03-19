@@ -46,13 +46,13 @@
   flex-direction: column;
   align-items: center;
 }
-.eventCont h1 {
+/* .eventCont h1 {
   font-size: 50px;
   color: #084066;
   font-weight: 900;
   border-bottom: 2px solid black;
   background-color: #0079c9;
-}
+} */
 .popup-container {
   display: none;
   position: fixed;

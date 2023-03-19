@@ -19,7 +19,7 @@
   background-position: center;
   background-repeat: no-repeat;
   height: 70vh;
-  border-radius: 50px;
+  border-radius: 30px;
   color: #fff;
   cursor: pointer;
   flex: 0.5;
@@ -67,7 +67,7 @@
     background-position: center;
     background-repeat: no-repeat;
     height: 60vh;
-    border-radius: 50px;
+    border-radius: 30px;
     color: #fff;
     cursor: pointer;
     flex: 0.5;
@@ -87,4 +87,30 @@
     opacity: 1;
     transition: opacity 0.3s ease-in 0.4s;
   }
+}
+.underlined {
+  /*   background: red; */
+  position: relative;
+}
+.underline-clip:after {
+  content: "";
+  position: absolute;
+  top: 95%;
+  width: 150%;
+  aspect-ratio: 6 / 1;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border-radius: 50%;
+  border: 6px solid rgb(18, 28, 210);
+  /* Use a clip-path to hide and show the bits you want */
+  clip-path: polygon(0 0, 50% 50%, 100% 0);
+}
+
+.word {
+  position: relative;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  letter-spacing: 0.1em;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 3px;
 }
