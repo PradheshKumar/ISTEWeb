@@ -139,7 +139,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 #text1 {
-  font-size: 3rem;
+  font-size: 2.8rem;
   font-family: "poppins";
   padding: 0rem 2rem;
   font-weight: bolder;
@@ -658,12 +658,9 @@ time {
     height: auto;
   }
 
-  /* #text1 {
-    font-size: 30px;
-    color: #edf5e1;
-    padding: 0.5rem 0.5px;
-    margin: 10px 10px;
-  } */
+  #text1 {
+    font-size: 2.7rem;
+  }
 
   #text2 {
     font-size: 1.8rem;
@@ -835,12 +832,9 @@ time {
     height: auto;
   }
 
-  /* #text1 {
-    font-size: 45px;
-    color: #edf5e1;
-    padding: 0.5rem 0.5px;
-    margin: 10px 10px;
-  } */
+  #text1 {
+    font-size: 2.3rem;
+  }
 
   #text2 {
     font-size: 1.7rem;
@@ -977,7 +971,7 @@ time {
   }
 }
 
-@media screen and (min-width: 960px) and (max-width: 991px) {
+@media screen and (min-width: 955px) and (max-width: 1095px) {
   .fluid-container {
     background-color: none;
     color: #fff;
@@ -1005,7 +999,7 @@ time {
   }
 
   #text1 {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
 
   #text2 {
@@ -1135,7 +1129,7 @@ time {
   }
 }
 
-@media (min-width: 769px) and (max-width: 959px) {
+@media (min-width: 769px) and (max-width: 954px) {
   html,
   body {
     width: 100%;
@@ -1177,16 +1171,14 @@ time {
   }
 
   #text1 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 
   #text2 {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
-
-  #text_iete {
-    font-size: 30px;
-    color: #edf5e1;
+  .text_container {
+    padding: 0rem 5rem 5rem 5rem;
   }
 
   #text_p {
@@ -1310,7 +1302,7 @@ time {
   }
 }
 
-@media (min-width: 401px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   html,
   body {
     width: 100%;
@@ -1348,13 +1340,26 @@ time {
   }
 
   #text1 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 
   #text2 {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
   }
-
+  #text4 {
+    font-size: 1rem;
+    text-shadow: -0.5px 0.5px 0 #41ba45, 0.5px 0.5px 0 #c63d2b,
+      0.5px -0.5px 0 #42afac, -0.5px -0.5px 0 #fff700;
+  }
+  .eventInfo i {
+    font-size: 0.7rem;
+  }
+  .eventInfo {
+    font-size: 1rem;
+  }
+  .text_container {
+    padding: 0rem 2rem 3rem 2rem;
+  }
   #text_iete {
     font-size: 15px;
     color: #edf5e1;
@@ -1487,7 +1492,7 @@ time {
     padding-bottom: 90px;
   }
 }
-
+/*
 @media screen and (min-width: 760px) and (max-width: 768px) {
   #abt {
     font-size: 40px;
@@ -1539,10 +1544,6 @@ time {
     align-items: center;
     position: relative;
   }
-
-  /* .logos-container{
-    margin-top: -30px;
-  } */
 
   #text1 {
     font-size: 18px;
@@ -1741,3 +1742,4 @@ time {
     margin-top: -80px;
   }
 }
+*/
