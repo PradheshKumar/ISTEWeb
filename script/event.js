@@ -8,7 +8,7 @@ buttons.forEach((button, i) => {
   button.addEventListener("click", () => {
     const title = button.textContent;
     let body;
-    console.log(i);
+    document.querySelector("#about").style = "visibility:hidden";
     // if (i === 0) {
     //   body =
     //     "A paper presentation is a form of academic presentation in which the presenter delivers a paper or research article on a particular topic to an audience. This type of presentation is often given at academic conferences, symposiums, and seminars, where researchers, scholars, and experts come together to share and discuss their latest research findings and ideas. Paper presentations typically involve a structured oral presentation of the research paper, where the presenter discusses the research question, objectives, methodology, findings, and conclusions. The presenter may use slides or visual aids to support the presentation, and there is usually time for questions and discussion at the end of the presentation.The purpose of a paper presentation is to disseminate research findings, share knowledge and ideas, and receive feedback and comments from peers and experts in the field. It is an opportunity for researchers to showcase their work, engage in scholarly discussions, and establish connections with others who share similar research interests.Paper presentations are an important part of the academic community and provide a platform for researchers to share their work, receive feedback, and contribute to the advancement of knowledge in their field.";
@@ -30,4 +30,5 @@ buttons.forEach((button, i) => {
 
 popupClose.addEventListener("click", () => {
   popup.style.display = "none";
+  document.querySelector("#about").style = "";
 });

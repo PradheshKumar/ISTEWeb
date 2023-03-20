@@ -63,7 +63,6 @@ body::-webkit-scrollbar-thumb {
     color-stop(0.86, #434343)
   );
 }
-
 #preloader {
   background: url(./../images/bg1.png) no-repeat center center;
   background-size: 10%;
@@ -72,6 +71,49 @@ body::-webkit-scrollbar-thumb {
   top: 0;
   position: fixed;
   z-index: 999999999;
+}
+.footerText {
+  font-family: nooa;
+  font-size: 15px;
+}
+.contact-info {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.socialHandle i {
+  font-size: 30px;
+  color: #fff;
+}
+.footerCont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.socialHandle {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.contact-info h3 {
+  font-family: sans-serif;
+  font-size: 15px !important;
+  font-weight: bolder;
+  margin-bottom: 30px !important;
+}
+
+.contact-info p {
+  font-size: 16px;
+  font-family: nooa;
+  margin-bottom: 5px;
+}
+
+.contact-info p strong {
+  font-weight: bold;
+  font-family: nooa;
+  margin-right: 10px;
 }
 .nav-link span {
   color: #1f4d9d;
@@ -113,8 +155,9 @@ body::-webkit-scrollbar-thumb {
 }
 
 #svceLogo {
-  padding: 20px 10px;
-  margin: 20px;
+  transform: scale(1.5);
+  padding: 20px 20px;
+  margin: 50px;
   height: auto;
   width: 30%;
 }
@@ -148,7 +191,7 @@ body::-webkit-scrollbar-thumb {
   background-color: rgba(255, 255, 255, 0.3);
   height: 6rem;
   border-radius: 10px;
-  padding: 0 1rem;
+  padding: 2rem;
   margin: 10px 10px;
   border-radius: 5px;
 }
@@ -242,14 +285,6 @@ hr {
   margin: 3rem 1rem;
 }
 
-.eventCont {
-  background: url(./../images/bg1.png);
-  background-size: cover;
-  object-fit: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
 #about .container {
   display: grid;
   grid-column: auto;
@@ -278,6 +313,7 @@ hr {
   padding-top: 30px;
   padding-bottom: 60px;
   color: #edf5e1;
+  margin-top: 40px;
 }
 
 #text3 {
@@ -442,7 +478,9 @@ time {
 .timeline ul li::after {
   transition: background 0.5s ease-in-out;
 }
-
+.timeline ul li div {
+  font-family: "nooa";
+}
 .timeline ul li.in-view::after {
   background: #05386b;
 }
@@ -1552,254 +1590,3 @@ time {
     padding-bottom: 90px;
   }
 }
-/*
-@media screen and (min-width: 760px) and (max-width: 768px) {
-  #abt {
-    font-size: 40px;
-    color: #edf5e1;
-  }
-
-  #about-img {
-    width: 600px;
-    height: auto;
-  }
-  #text3 {
-    font-size: 15px;
-  }
-
-  #btn-abt {
-    font-size: 15px;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  html,
-  body {
-    width: 100%;
-    overflow-x: hidden;
-  }
-
-  #svceLogo {
-    height: 100px;
-    width: 90px;
-  }
-
-  #isteLogo {
-    padding-top: 20px;
-    padding-left: 40px;
-    height: 90px;
-    width: 110px;
-  }
-
-  .fluid-container {
-    background-color: none;
-    color: #fff;
-    margin: 0.01rem 0.1rem;
-    padding: 0.01rem 0.1rem;
-    border-radius: 5px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-  }
-
-  #text1 {
-    font-size: 18px;
-    padding: 0.1rem 0.5px;
-    margin: 12px 10px;
-    padding-top: 10px;
-  }
-
-  #text2 {
-    font-size: 0.6rem;
-  }
-
-  #text_iete {
-    font-size: 15px;
-    color: #edf5e1;
-    margin-top: -20px;
-  }
-
-  #text_p {
-    font-size: 12px;
-    color: #edf5e1;
-    margin-top: -30px;
-  }
-
-  #text_make {
-    font-size: 24px;
-    color: #edf5e1;
-    margin-top: -30px;
-  }
-
-  .logos_container {
-    margin-top: -50px;
-  }
-
-  #main_img {
-    height: 4rem;
-    border-radius: 10px;
-    padding: 0 0.5rem;
-    margin: 10px 10px;
-    border-radius: 5px;
-  }
-
-  .time-content {
-    margin-top: -50px;
-    padding-right: 10px;
-    padding-left: 10px;
-  }
-
-  #days,
-  #hours,
-  #minutes,
-  #seconds {
-    background-color: #198a98c4;
-    box-shadow: #198a98c4 0px 20px 30px -10px;
-    border-radius: 10px;
-    padding: 10px 12px;
-    margin: 15px 10px;
-    color: #fff;
-  }
-
-  .launch-time div {
-    flex-basis: 100px;
-  }
-
-  .launch-time div p {
-    font-size: 25px;
-  }
-  .launch-time span {
-    margin-right: 0;
-  }
-
-  span {
-    font-size: 12px;
-  }
-
-  #text_reg {
-    font-size: 20px;
-    margin-top: -30px;
-  }
-
-  #btn-reg {
-    margin-top: -5px;
-    font-size: 15px;
-  }
-
-  #abt {
-    font-size: 40px;
-    color: #edf5e1;
-    padding-bottom: 50px;
-  }
-
-  #abouted {
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-  }
-
-  #img-abt {
-    min-width: 200px;
-  }
-
-  #content {
-    margin-top: -80px;
-    padding: 50px 10px 10px 10px;
-  }
-
-  #text3 {
-    font-size: 12px;
-    width: 100%;
-    margin-top: -30px;
-    padding: 0 8px;
-    text-align: justify;
-    color: #edf5e1;
-  }
-
-  #btn-abt {
-    font-size: 13px;
-  }
-
-  #timed {
-    font-size: 40px;
-    font-weight: bold;
-    margin-bottom: -10px;
-  }
-
-  .timeline ul {
-    margin-top: -80px;
-  }
-
-  #times {
-    font-size: 12px;
-  }
-
-  #timed1 {
-    font-size: 40px;
-    font-weight: bold;
-    margin-bottom: 40px;
-    color: #edf5e1;
-  }
-
-  #problem-statements {
-    height: auto;
-  }
-
-  #prob {
-    padding-bottom: 50px;
-  }
-
-  #timed1 {
-    padding-top: 50px;
-  }
-
-  .accordion-item {
-    font-size: 12px;
-  }
-
-  #text_reged {
-    font-size: 30px;
-    color: #edf5e1;
-  }
-
-  #rules-head {
-    font-size: 40px;
-  }
-
-  #ruled {
-    font-size: 15px;
-  }
-
-  #sponsors {
-    height: auto;
-  }
-
-  #sponsor-head {
-    font-size: 40px;
-    padding-top: 50px;
-    margin-bottom: 10px;
-    color: #edf5e1;
-  }
-
-  #sponsor_logo {
-    padding-top: 90px;
-  }
-}
-
-@media screen and (max-width: 360px) {
-  #main {
-    height: auto;
-  }
-
-  #text3 {
-    font-size: 12px;
-  }
-
-  #content {
-    margin-top: -80px;
-  }
-}
-*/

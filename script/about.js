@@ -15,9 +15,9 @@ panels.forEach((panel) => {
         p.style.display = "none";
       });
       if (panel.querySelector("img")) panel.querySelector("img").style = "";
-      if (i == 0)
+      if (i == 0 || i == 1)
         panel.querySelector("img").style =
-          "transform: rotate(270deg) scale(1.5);";
+          "transform: rotate(270deg) scale(2);";
       panel.classList.remove("active");
     });
   };

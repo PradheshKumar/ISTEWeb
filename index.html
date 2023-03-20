@@ -169,7 +169,7 @@
         </div>
       </div>
     </div>
-    <div class="registerCont">
+    <div class="registerCont" id="register">
       <div id="timer">
         <div class="clock-box">
           <span class="clock-label">Days</span>
@@ -187,10 +187,26 @@
           <span class="clock-label">Seconds</span>
           <div id="second">00</div>
         </div>
+      </div> 
+      <div class="register-info">
+        <ul>
+        <li>A student can attend a maximum of two events.</li>
+        
+        <li>On the spot registration and payment is not encouraged.</li>
+        <li>Registration cannot be cancelled/modified.</li>
+        <li>Net Banking or UPI payments accepted to pay the registration fee.</li>
+      </ul>
+      <h4>Registration Fees:</h4>
+      <ul><li>ISTE Student Members: Rs.200/-</li>
+        <li>Non-ISTE Student Members: Rs.350/-</li></ul>
+      
       </div>
-      <button>Register Soon</button>
+      <button>Register Now</button>
+      <div class="register-info"><h4 style="font-family: nooa;font-size:18px">Accommodations for student delegates and accompanying faculty members will be provided in the
+        college hostel on a payment basis upon receiving the prior intimation.
+        </h4></div>
     </div>
-    <div class="eventCont">
+    <div class="eventCont" id="events">
       <h1 class="underlined underline-clip">OUR EVENTS</h1>
 
     <div class="eventNames">
@@ -200,7 +216,7 @@
       </div>
       <div class="button" id="button-4">Workshop on Design Thinking</div>
     </div>
-    <div class="popup-container" id="popup">
+    <div class="popup-container" style="display:none"id="popup">
       <div class="popup-content">
         <div class="popup-header">
           <div class="popup-title"></div>
@@ -214,7 +230,7 @@
     </div>
     <div class="container" id="prob">
       <p class="text-center" id="text_reged" style="margin-top: 50px;">
-        THEMES
+        THEME
        </p>
       <p class="text-center" id="text_reged" style="font-family: nooa;font-size:30px;padding-bottom:70px">
     Recent Technological Trends and Engineering Innovations Powering a Sustainable Future
@@ -256,10 +272,20 @@
           <li>Alumni working in fortune 500 companies like Google, Microsoft, Facebook, Mercedes,Benz, INTEL, etc.,</li>
          <li>State-of-the- art-campus with modern amenities in the industrial corridor of Chennai</li> </ul>
         </p>
-        </div>
-        <div class="panel active" >
-          <img src="./images/ISTE_logo.png" style ="width:50%;display:none"alt="">
-          <p class="text" id="text3" >
+        </div><div class="panel active" >
+          <img src="./images/convention.png" style="transform: rotate(270deg) scale(2);display:none;"alt="">
+          <p class="text" id="text3">
+           ISTE conducts the annual convention for students and teachers separately every year, and many
+technocrats, technical educators, policymakers, industry professionals, etc. attend and have
+discussions.
+For the proposed State Level Annual Engineering Students Convention-2023, the renowned experts in
+technical education are invited to deliver special lectures, and delegates will present research papers.
+ISTE actively participates in numerous initiatives carried out by the National Board of Accreditation
+New Delhi and the All India Council for Technical Education New Delhi (AICTE) (NBA)</p>
+          </div>
+        <div class="panel" >
+          <img src="./images/ISTE_logo.png" alt="">
+          <p class="text" id="text3"  style="display: none;">
             The Indian Society for Technical Education (ISTE) is the leading National Professional Non-Profit
             Society for the Technical Education System in our nation functioning with the motto of Career and
             Personality Development of Students as well as the overall development of our Technical Education
@@ -272,17 +298,7 @@
             1414 faculty chapters, 1505 student chapters, and 19 Sections make up its active membership at the
             national and state levels, respectively.</p>
           </div>
-          <div class="panel" >
-           <img src="./images/ISTE_logo2.png" alt="">
-           <p class="text" id="text3" style="display: none;">
-            ISTE conducts the annual convention for students and teachers separately every year, and many
-technocrats, technical educators, policymakers, industry professionals, etc. attend and have
-discussions.
-For the proposed State Level Annual Engineering Students Convention-2023, the renowned experts in
-technical education are invited to deliver special lectures, and delegates will present research papers.
-ISTE actively participates in numerous initiatives carried out by the National Board of Accreditation
-New Delhi and the All India Council for Technical Education New Delhi (AICTE) (NBA)</p>
-           </div>
+          
        </div> 
     </section>
     
@@ -315,23 +331,9 @@ New Delhi and the All India Council for Technical Education New Delhi (AICTE) (N
         <div class="logos_container" id="sponsor_logo">
           <img
             class="img-fluid"
-            src="https://make-a-thon-alpha.vercel.app/MAKEATHON/images/svce-removebg-preview.png"
+            src="./images/svce.png"
             id="main_img"
-          />
-          <img
-            class="img-fluid"
-            src="https://make-a-thon-alpha.vercel.app/MAKEATHON/images/ECEA logoed.png"
-            id="main_img"
-          />
-          <img
-            class="img-fluid"
-            src="https://make-a-thon-alpha.vercel.app/MAKEATHON/images/iete.png"
-            id="main_img"
-          />
-          <img
-            class="img-fluid"
-            src="https://make-a-thon-alpha.vercel.app/MAKEATHON/images/raic logo.png"
-            id="main_img"
+            style="width: 200px"
           />
         </div>
       </div>
@@ -341,51 +343,65 @@ New Delhi and the All India Council for Technical Education New Delhi (AICTE) (N
       <footer id="contact">
         <div class="container">
           <div class="row">
-            <div class="col-sm-6 col-md-3 item">
-              <h3>Make-a-Thon 4.0</h3>
+            <!-- <div class="col-sm-6 col-md-3 item ">
+              ISTE SVCE Faculty Chapter Coordinators:
+            </div> -->
+            <!-- <div class="contact-info">
+              <h3>ISTE SVCE Students Chapter Coordinator:</h3>
+              <p><strong>De.skooiosds</strong>, Chairperson</p>
+              <p>Mobile: 23216772382</p>
+              <p><strong>De.iujundsd</strong>, Securatrary cum treasurer</p>
+              <p>Mobile: 235452322</p>
+            </div> -->
+            <div class="footerCont">
+            <div class="">
+            <div class="contact-info">
+              <h3>ISTE SVCE Faculty Chapter Coordinator:</h3>
+              <p><strong>Dr. S.Gopinath</strong>, Chairperson</p>
+              <p>Mobile: 9445115107</p>
+              <p><strong>Mr. S.Senthil Rajan</strong>, Secretary cum Treasurer</p>
+              <p>Mobile: 9444447806</p>
+            </div></div>
+            <div class="">
+            <div class="contact-info">
+              <h3>ISTE SVCE Faculty Chapter Coordinator:</h3>
+              <p><strong>Dr. S.Natarajan</strong>, Chairperson</p>
+              <p>Mobile: 9994515856</p>
+              <p><strong>Mr. G.Kirubakaran</strong>, Secretary cum Treasurer</p>
+              <p>Mobile: 8903626901</p>
+            </div></div>
+            <div class="">
+              
+              
               <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#events">Our Event</a></li>
-                <li><a href="#schedule1">Schedule</a></li>
-              </ul>
-            </div>
-            <div class="col-sm-6 col-md-3 item">
-              <h3>About</h3>
-              <ul>
-                <li><a href="https://www.svce.ac.in/">College</a></li>
+                <li><a href="#main">Home</a></li>
                 <li>
-                  <a href="https://www.svce.ac.in/admission/programs-offered/ "
-                    >Admission</a
-                  >
+                  <a href="#events">Our Events</a>
                 </li>
                 <li>
-                  <a href="https://www.svce.ac.in/contact-us/">Contact us</a>
+                  <a href="#about">About Us</a>
+                </li>
+                <li>
+                  <a href="#register">Register Now</a>
                 </li>
               </ul>
             </div>
-            <div class="col-md-6 item text">
-              <h3>Sri Venkateswara College of Engineering (SVCE)</h3>
-              <p>
-                A premier self-financing engineering college was started in the
-                year 1985 and is managed by Sri Venkateswara Educational and
-                Health Trust.
-              </p>
-            </div>
-            <div class="col item social">
+          </div>
+            <div class="socialHandle col item social" >
               <a href="tel:+91 97898 54546 " style="text-decoration: none"
                 ><i class="ri-phone-fill"></i
               ></a>
-              <a href="mailto:ecea@svce.ac.in" style="text-decoration: none"
+              <a href="mailto:sample@svce.ac.in" style="text-decoration: none"
                 ><i class="ri-mail-fill"></i
               ></a>
               <a
-                href="https://instagram.com/eceasvce?igshid=YmMyMTA2M2Y="
-                style="text-decoration: none"
+                href="https://instagram.com/iste.svce.student.convention?igshid=MGNiNDI5ZTU="
+                style="text-decoration: none"  target="_blank"
                 ><i class="ri-instagram-fill"></i
               ></a>
               <a
                 href="https://goo.gl/maps/zqrgk34KBbfZ5EKRA"
-                style="text-decoration: none"
+                style="text-decoration: none" target="_blank"
                 ><i class="ri-map-pin-2-fill"></i
               ></a>
             </div>
