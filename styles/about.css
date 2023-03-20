@@ -8,13 +8,7 @@
 }
 .panel {
   overflow: scroll;
-  background: linear-gradient(
-    10.6deg,
-    #084066,
-    rgb(67, 71, 99) 1.5%,
-    #285d80,
-    #091217
-  );
+  background: rgba(96, 94, 94, 0.4);
   background-size: auto 110%;
   background-position: center;
   background-repeat: no-repeat;
@@ -29,7 +23,7 @@
   -webkit-transition: all 700ms ease-in;
 }
 .panel img {
-  margin-top: 150px;
+  margin-top: 230px;
   /* background: rgb(212, 188, 188); */
 }
 .panel.active {
@@ -90,6 +84,7 @@
 }
 .underlined {
   /*   background: red; */
+  font-size: 50px;
   position: relative;
 }
 .underline-clip:after {

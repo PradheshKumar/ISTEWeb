@@ -15,7 +15,9 @@ panels.forEach((panel) => {
         p.style.display = "none";
       });
       if (panel.querySelector("img")) panel.querySelector("img").style = "";
-      if (i == 0) panel.querySelector("img").style = "background-color:white;";
+      if (i == 0)
+        panel.querySelector("img").style =
+          "transform: rotate(270deg) scale(1.5);";
       panel.classList.remove("active");
     });
   };
