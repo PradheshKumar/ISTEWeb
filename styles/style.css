@@ -80,7 +80,7 @@ body::-webkit-scrollbar-thumb {
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
 }
 .socialHandle i {
   font-size: 30px;
@@ -324,6 +324,7 @@ hr {
   font-family: "nooa";
 }
 li {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
   font-size: 1.2rem;
   font-family: "nooa";
 }
@@ -506,7 +507,7 @@ time {
 }
 
 #text_reged {
-  font-size: 25px;
+  font-size: 30px;
   /* margin: 2rem 2rem; */
 }
 
@@ -647,6 +648,11 @@ time {
 .navbar {
   /* background-color: rgb(0, 0, 0, 0.4); */
 }
+.text-center:nth-child(2) {
+  font-family: nooa;
+  font-size: 25px !important;
+  padding-bottom: 70px;
+}
 @keyframes scaleAnimation {
   0% {
     transform: translateX(-50%) scale(1);
@@ -662,13 +668,529 @@ time {
 /* GENERAL MEDIA QUERIES
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-@media screen and (max-width: 900px) {
+@media screen and (min-width: 1285px) and (max-width: 1515px) {
+  * {
+  }
+  .nav-link span {
+    font-size: 18px;
+  }
+  #text1 {
+    font-size: 2.5rem;
+  }
+  .eventNames {
+    height: unset;
+    width: 80%;
+    flex-direction: unset;
+  }
+}
+@media screen and (min-width: 1050px) and (max-width: 1284px) {
+  .nav-link span {
+    font-size: 16px;
+  }
+  #text1 {
+    font-size: 1.7rem;
+  }
+  #text2 {
+    font-size: 1.2rem;
+  }
+  #text4 {
+    font-size: 1.25rem;
+  }
+  .eventInfo span {
+    font-size: 15px;
+  }
+  .eventNames {
+    height: unset;
+    width: 80%;
+    flex-direction: unset;
+  }
+  .underlined {
+    font-size: 40px;
+  }
+  .button {
+    width: 325px;
+    height: 250px;
+    font-size: 23px;
+  }
+  .text-center:nth-child(2) {
+    font-size: 22px !important;
+    padding-bottom: 30px;
+  }
+  .aboutCont {
+    padding: 0 60px 50px 60px;
+  }
+  #text3 {
+    font-size: 1.2rem;
+  }
+  li {
+    font-size: 1.1rem;
+  }
+  #timed {
+    font-size: 40px;
+  }
+  #sponsor-head {
+    font-size: 40px;
+  }
+}
+@media screen and (min-width: 1000px) and (max-width: 1049px) {
+  #svceLogo {
+    transform: scale(1.5) !important;
+  }
+}
+@media screen and (min-width: 900px) and (max-width: 1049px) {
+  #svceLogo {
+    transform: scale(2);
+    padding: unset;
+  }
+  #navbarNav {
+    margin-right: -80px;
+  }
+  .text_container {
+    padding: 0 3rem 8rem;
+  }
+  #text2 {
+    font-size: 1.2rem;
+    margin: 20px;
+  }
+  .nav-link span {
+    font-size: 16px;
+  }
+  #text1 {
+    font-size: 1.7rem;
+  }
+  #text4 {
+    font-size: 1.25rem;
+  }
+  .eventInfo span {
+    font-size: 15px;
+  }
+  .eventNames {
+    height: unset;
+    width: 80%;
+    flex-direction: unset;
+  }
+  .underlined {
+    font-size: 40px;
+  }
+  .button {
+    width: 250px;
+    height: 200px;
+    font-size: 20px;
+  }
+  .text-center:nth-child(2) {
+    font-size: 22px !important;
+    padding-bottom: 40px !important;
+  }
+  .aboutCont {
+    padding: 0 60px 50px 60px;
+  }
+  #text3 {
+    font-size: 1rem;
+  }
+  li {
+    text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.5);
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+  }
+  #timed {
+    font-size: 40px;
+  }
+  #sponsor-head {
+    font-size: 40px;
+  }
+  .popup-body ul li {
+    font-size: 18px;
+  }
+  .eventContact {
+    font-size: 17px;
+  }
+  .timeline ul {
+    margin-top: -80px;
+  }
+  .footerCont {
+    margin-bottom: 24px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 899px) {
+  #svceLogo {
+    transform: scale(1.8);
+    padding: unset;
+  }
+  #navbarNav {
+    margin-right: -80px;
+    padding-right: 20px;
+  }
+  .text_container {
+    padding: 0 3rem 8rem;
+  }
+  #text1 {
+    font-size: 1.5rem;
+  }
+  #text2 {
+    font-size: 1rem;
+    margin: 20px;
+  }
+  .nav-link span {
+    font-size: 13px;
+  }
+  #text4 {
+    font-size: 1.1rem;
+  }
+  .eventInfo span {
+    font-size: 14px;
+  }
+  .eventNames {
+    height: unset;
+    width: 80%;
+    flex-direction: unset;
+  }
+  .underlined {
+    font-size: 40px;
+  }
+  .button {
+    width: 250px;
+    height: 200px;
+    font-size: 20px;
+  }
+  .text-center:nth-child(2) {
+    font-size: 22px !important;
+    padding-bottom: 40px !important;
+  }
+  .aboutCont {
+    padding: 0 60px 50px 60px;
+  }
+  #text3 {
+    font-size: 1rem;
+  }
+  li {
+    text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.5);
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+  }
+  #timed {
+    font-size: 40px;
+  }
+  #sponsor-head {
+    font-size: 40px;
+  }
+  .popup-body ul li {
+    font-size: 18px;
+  }
+  .eventContact {
+    font-size: 17px;
+  }
+  .timeline ul {
+    margin-top: -80px;
+  }
+  .footerCont {
+    margin-bottom: 24px;
+  }
   .timeline ul li div {
     width: 250px;
   }
   .timeline ul li:nth-child(even) div {
     left: -289px;
-    /*250+45-6*/
+  }
+}
+@media screen and (min-width: 650px) and (max-width: 767px) {
+  .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: none;
+    width: 100%;
+    padding-top: 1rem;
+    background-color: rgba(255, 255, 255, 0.577);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    animation: navbarCollapseIn 2s ease;
+  }
+
+  .navbar-collapse.show {
+    display: block;
+  }
+  .navbar-nav {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+  .navbar-nav .nav-item {
+    margin-bottom: 0.5rem;
+  }
+  .navbar-nav .nav-item:last-child {
+    margin-bottom: 0;
+  }
+  .popup-header {
+    padding: 35px 10px 35px 10px;
+  }
+  .panel {
+    flex: 0.7;
+  }
+  .nav-link::before {
+    width: 0%;
+    bottom: 5px;
+    left: 10;
+  }
+
+  .nav-link:hover::before {
+    width: 100%;
+  }
+  .navbar > .container {
+    flex-wrap: nowrap;
+  }
+  #svceLogo {
+    transform: scale(1.8);
+    padding: unset;
+  }
+  #navbarNav {
+    margin-right: -80px;
+    padding-right: 20px;
+  }
+  .text_container {
+    padding: 0 3rem 8rem;
+  }
+  #text1 {
+    font-size: 1.17rem;
+  }
+  #text2 {
+    font-size: 0.8rem;
+    margin: 20px;
+  }
+  .nav-link span {
+    font-size: 13px;
+  }
+  #text4 {
+    font-size: 0.88rem;
+  }
+  .eventInfo span {
+    font-size: 11px;
+  }
+  .eventNames {
+    height: unset;
+    width: 80%;
+    flex-direction: unset;
+  }
+  .underlined {
+    font-size: 40px;
+  }
+  .button {
+    width: 200px;
+    height: 150px;
+    font-size: 15px;
+  }
+  .text-center:nth-child(2) {
+    font-size: 18px !important;
+    padding-bottom: 40px !important;
+  }
+  #btn-reged {
+    font-size: 15px;
+  }
+  .aboutCont {
+    padding: 0 60px 50px 60px;
+  }
+  #text_reged {
+    font-size: 25px;
+  }
+  #text3 {
+    font-size: 1rem;
+  }
+  li {
+    text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.5);
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+  }
+  #timed {
+    font-size: 40px;
+  }
+  #sponsor-head {
+    font-size: 40px;
+  }
+  .popup-body ul li {
+    font-size: 18px;
+  }
+  .eventContact {
+    font-size: 17px;
+  }
+  .timeline ul {
+    margin-top: -80px;
+  }
+  .footerCont {
+    margin-bottom: 24px;
+  }
+  .timeline ul li div {
+    width: 250px;
+  }
+  .timeline ul li:nth-child(even) div {
+    left: -289px;
+  }
+}
+@media screen and (max-width: 649px) {
+  .navbar-toggler {
+    margin-left: 50px;
+  }
+  #isteLogo {
+    width: 90px;
+  }
+  #main {
+    height: 80vh;
+  }
+  .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: none;
+    width: 100%;
+    padding-top: 1rem;
+    background-color: rgba(255, 255, 255, 0.577);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    animation: navbarCollapseIn 2s ease;
+  }
+
+  .navbar-collapse.show {
+    display: block;
+  }
+  .navbar-nav {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+  .navbar-nav .nav-item {
+    margin-bottom: 0.5rem;
+  }
+  .navbar-nav .nav-item:last-child {
+    margin-bottom: 0;
+  }
+  .popup-header {
+    padding: 35px 10px 35px 10px;
+  }
+  .panel {
+    flex: 1.3;
+  }
+  .nav-link::before {
+    width: 0%;
+    bottom: 5px;
+    left: 10;
+  }
+
+  .nav-link:hover::before {
+    width: 100%;
+  }
+  .navbar > .container {
+    flex-wrap: nowrap;
+  }
+  #svceLogo {
+    transform: scale(1.8);
+    padding: unset;
+  }
+  #navbarNav {
+    margin-right: -80px;
+    padding-right: 20px;
+  }
+  .text_container {
+    width: 96vw;
+    padding: 1rem 0rem 8rem;
+  }
+  #text1 {
+    font-size: 0.89rem;
+  }
+  #text2 {
+    font-size: 0.6rem;
+    margin: 20px;
+  }
+  .nav-link span {
+    font-size: 13px;
+  }
+  #text4 {
+    font-size: 0.7rem;
+  }
+  .register-info h4 {
+    font-size: 8px;
+  }
+  h4 {
+    font-size: unset;
+  }
+  .eventInfo span {
+    font-size: 8px;
+  }
+  .eventInfo I {
+    font-size: 0.8rem;
+  }
+  .register-info ul li {
+    font-size: 14px;
+  }
+  .eventNames {
+    height: unset;
+    width: 80%;
+    flex-direction: unset;
+  }
+  .underlined {
+    font-size: 20px;
+  }
+  .button {
+    width: 200px;
+    height: 150px;
+    font-size: 15px;
+  }
+  .text-center:nth-child(2) {
+    font-size: 13px !important;
+    padding-bottom: 40px !important;
+  }
+  #btn-reged {
+    font-size: 10px;
+  }
+  .aboutCont {
+    padding: 0 0px 50px 0px;
+  }
+  #text_reged {
+    font-size: 20px;
+  }
+  .registerCont button {
+    width: 40%;
+  }
+  #text3 {
+    padding: 0.7rem;
+    font-size: 0.8rem;
+  }
+  li {
+    text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.5);
+    font-size: 0.8rem;
+    letter-spacing: 0.5px;
+  }
+  #timed {
+    font-size: 20px;
+  }
+  #sponsor-head {
+    font-size: 20px;
+  }
+  .popup-body ul li {
+    font-size: 18px;
+  }
+  .eventContact {
+    font-size: 17px;
+  }
+  .timeline ul li {
+    margin-left: 20px;
+  }
+  .timeline ul li div {
+    width: calc(100vw - 140px);
+  }
+  .timeline ul li:nth-child(even) div {
+    left: 45px;
+  }
+  .timeline ul li:nth-child(even) div::before {
+    left: -15px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent #198a98c4 transparent transparent;
+  }
+}
+/* @media screen and (max-width: 900px) {
+  .timeline ul li div {
+    width: 250px;
+  }
+  .timeline ul li:nth-child(even) div {
+    left: -289px;
+    250+45-6
   }
 }
 
@@ -689,22 +1211,22 @@ time {
   }
 }
 
-/* @media screen and (max-width:1305px){
-    #about-img{
-      width:700px;
-      height: auto;
-      margin-left: -70px;
-    }
-    #about{
-      height: auto;
-    }
+@media screen and (max-width: 1305px) {
+  #about-img {
+    width: 700px;
+    height: auto;
+    margin-left: -70px;
+  }
+  #about {
+    height: auto;
+  }
 
-    #text3{
-      font-size: 15px;
-      margin-top: -40px;
-      color: #edf5e1;
-    }
-  } */
+  #text3 {
+    font-size: 15px;
+    margin-top: -40px;
+    color: #edf5e1;
+  }
+}
 
 @media (min-width: 1200px) and (max-width: 1440px) {
   html,
@@ -1588,5 +2110,136 @@ time {
   #sponsor-head {
     font-size: 40px;
     padding-bottom: 90px;
+  }
+} */
+
+/* TIMER Responsive */
+@media screen and (max-width: 1100px) {
+  .clock-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    margin: 1rem;
+    padding: 1.3rem 1.4rem;
+    border-radius: 10px;
+    box-shadow: -4px -6px 34px 3px rgba(0, 0, 0, 0.75);
+  }
+
+  .clock-label {
+    font-size: 1rem;
+    margin-right: 1rem;
+    border-bottom: 2px solid black;
+  }
+  .registerCont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+  }
+
+  .registerCont button {
+    width: 40%;
+    min-width: 30%;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    margin-top: 1.5rem;
+    background: linear-gradient(
+      270deg,
+      rgba(103, 136, 212, 0.68) 11.5%,
+      #3a89be
+    );
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: -2px -3px 20px 1px rgba(0, 0, 0, 0.75);
+  }
+}
+@media screen and (max-width: 560px) {
+  .clock-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin: 1rem;
+    padding: 1rem 1.2rem;
+    border-radius: 7px;
+    box-shadow: -4px -6px 34px 3px rgba(0, 0, 0, 0.75);
+  }
+
+  .clock-label {
+    font-size: 1rem;
+    margin-right: 1rem;
+    border-bottom: 2px solid black;
+  }
+  .registerCont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+  }
+
+  .registerCont button {
+    width: 40%;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    margin-top: 1.2rem;
+    background: linear-gradient(
+      270deg,
+      rgba(103, 136, 212, 0.68) 11.5%,
+      #3a89be
+    );
+    border-radius: 10px;
+    padding: 0.7rem;
+    box-shadow: -2px -3px 20px 1px rgba(0, 0, 0, 0.75);
+  }
+}
+@media screen and (max-width: 685px) {
+  .clock-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin: 1rem;
+    padding: 1rem 1.2rem;
+    border-radius: 7px;
+    box-shadow: -4px -6px 34px 3px rgba(0, 0, 0, 0.75);
+  }
+  #timer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 16rem;
+    align-content: space-around;
+  }
+
+  .clock-label {
+    font-size: 1rem;
+    margin-right: 1rem;
+    border-bottom: 2px solid black;
+  }
+  .registerCont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+    padding: 5px;
+  }
+
+  .registerCont button {
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    margin-top: 1.2rem;
+    background: linear-gradient(
+      270deg,
+      rgba(103, 136, 212, 0.68) 11.5%,
+      #3a89be
+    );
+    border-radius: 10px;
+    padding: 0.7rem;
+    box-shadow: -2px -3px 20px 1px rgba(0, 0, 0, 0.75);
   }
 }
