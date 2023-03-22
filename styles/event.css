@@ -7,10 +7,23 @@
   height: 200px;
 }
 .popup-body h3,
-.popup-body h3 pre {
+.popup-body h3 pre,
+.popup-body h2,
+.popup-body p,
+.popup-body ul li {
   color: #285d80 !important;
   font-family: "nooa";
   font-weight: 900;
+}
+.popup-body i {
+  margin-right: 10px;
+  color: #285d80 !important;
+}
+.eventContact {
+  padding: 0px 0px 50px 50px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
 }
 .popup-body button {
   background-color: #285d80;
@@ -126,10 +139,11 @@
 
 .popup-body {
   flex: 1;
-  padding: 10px;
-  background-color: #e1e1e1;
+  background-color: #c3c3c38a;
   color: #084066;
   font-size: 18px;
+  padding: 30px;
+  width: 100%;
 }
 
 .popup-close {
