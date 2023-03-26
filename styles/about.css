@@ -24,7 +24,9 @@
 }
 .panel img {
   margin-top: 230px;
-  /* background: rgb(212, 188, 188); */
+}
+.panel:nth-of-type(3) img {
+  margin-top: 200px;
 }
 .panel.active {
   flex: 5;
