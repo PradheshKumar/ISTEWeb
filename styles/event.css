@@ -20,7 +20,7 @@
   color: #285d80 !important;
 }
 .eventContact {
-  padding: 0px 0px 50px 50px;
+  padding: 0px 0px 30px 50px;
   position: absolute;
   bottom: 0px;
   left: 0px;
@@ -96,6 +96,9 @@
 }
 .nav-text {
   white-space: nowrap;
+}
+.eventSession {
+  font-size: calc(1rem + 0.6vw);
 }
 
 @keyframes fade-in {
