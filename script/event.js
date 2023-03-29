@@ -9,7 +9,7 @@ let body1 = ` <h2>Rules and Guidelines</h2><ul><li>Abstract should be less than 
   body3 = `<h2>Rules and Guidelines</h2><ul><li>Prepare the poster with the template given.</li><li> Presentation time 8 mins</li><li> QA time 2 mins</li></ul><h2 class="eventSession">SESSION : AN</h2><div class="eventContact"><p>For Queries Contact:</p><p>Subasree S - Event Coordinator</p><p><i class="fas fa-phone"></i>+91 9123559164</p><p><i class="far fa-envelope"></i>2020bt0569@svce.ac.in</p></div>`,
   body4 = `<h2 class="eventSession">SESSION : FN</h2><div class="eventContact"><p>For Queries Contact:</p><p> K S Nithishwaran  - Event Coordinator</p><p><i class="fas fa-phone"></i>+91 6382587302</p><p><i class="far fa-envelope"></i>2020bt0593@svce.ac.in</p></div>`;
 buttons.forEach((button, i) => {
-  button.addEventListener("click", () => {
+  button.addEventListener("mouseover", () => {
     const title = button.textContent;
     let body;
     document.querySelector("#about").style = "visibility:hidden";

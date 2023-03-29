@@ -6,6 +6,10 @@
   /* width: 90vw; */
   padding: 0px 60px 50px 60px;
 }
+.panel:hover {
+  box-shadow: 0 0 0 5px #fff, 0 0 0 4px #198a98c4;
+  transition: unset;
+}
 .panel {
   overflow: scroll;
   background: rgba(96, 94, 94, 0.4);
@@ -19,7 +23,7 @@
   flex: 0.5;
   margin: 10px;
   position: relative;
-  transition: flex 0.7s ease-in;
+  transition: flex 0.5s ease-in;
   -webkit-transition: all 700ms ease-in;
 }
 .panel img {
