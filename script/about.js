@@ -1,6 +1,6 @@
 const panels = document.querySelectorAll(".panel");
 panels.forEach((panel) => {
-  panel.addEventListener("click", () => {
+  panel.addEventListener("mouseover", () => {
     removeActiveClasses();
     panel.querySelectorAll("p,ul").forEach((p) => {
       p.style.display = "";
