@@ -59,8 +59,10 @@
   /* color: rgb(255, 0, 212) !important; */
   position: absolute;
   bottom: 30px;
-  font-size: 20px;
   color: rgba(245, 245, 245, 0.912);
+  font-size: calc(
+    10px + (15 - 10) * ((100vw - 320px) / (1280 - 320))
+  ) !important;
 }
 .eventNames {
   margin-top: 30px;

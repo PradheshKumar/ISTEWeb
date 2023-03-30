@@ -197,7 +197,7 @@ body::-webkit-scrollbar-thumb {
 #isteLogo {
   padding: 20px;
   width: calc(
-    100px + (160 - 100) * ((100vw - 320px) / (1280 - 320))
+    100px + (150 - 100) * ((100vw - 320px) / (1280 - 320))
   ) !important;
   margin-top: 50px;
 }
@@ -405,7 +405,7 @@ li {
   text-shadow: 1px -1px 0 #42afac, -1px -1px 0 #0eafff;
 }
 #svceLogo:nth-of-type(3) {
-  width: calc(30px + (150 - 30) * ((100vw - 320px) / (1280 - 320))) !important;
+  width: calc(30px + (120 - 30) * ((100vw - 320px) / (1280 - 320))) !important;
   margin-top: calc(100px + 0.8vw);
 }
 #text4 sup {
@@ -1145,7 +1145,7 @@ time {
     width: 90px;
   }
   #main {
-    height: 80vh;
+    /* height: 80vh; */
   }
   .navbar-collapse {
     position: absolute;
@@ -1202,7 +1202,7 @@ time {
   }
   .text_container {
     width: 96vw;
-    padding: 1rem 0rem 8rem;
+    padding: 1rem 0rem 0rem;
   }
   #text1 {
     font-size: 0.89rem;
