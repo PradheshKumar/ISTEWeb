@@ -86,10 +86,17 @@ body::-webkit-scrollbar-thumb {
   font-size: 30px;
   color: #fff;
 }
+.panel #text3,
+.panel ul li {
+  color: #000000;
+  font-weight: 900;
+  text-shadow: unset !important;
+}
 .footerCont {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  align-items: center;
 }
 .register-info ul {
   width: 100%;
@@ -97,7 +104,7 @@ body::-webkit-scrollbar-thumb {
   flex-direction: column;
   align-items: flex-start;
 }
-ul {
+.register-info ul {
   list-style-type: none;
 }
 .register-info ul li:before {
@@ -119,9 +126,18 @@ ul {
 }
 
 .contact-info p {
-  font-size: 16px;
+  font-size: calc(
+    14px + (20 - 14) * ((100vw - 320px) / (1280 - 320))
+  ) !important;
   font-family: nooa;
   margin-bottom: 5px;
+}
+.contact-info h3 {
+  padding-bottom: 5px !important;
+  font-size: calc(
+    14px + (20 - 14) * ((100vw - 320px) / (1280 - 320))
+  ) !important;
+  border-bottom: #000000 solid 5px;
 }
 
 .contact-info p strong {
@@ -180,11 +196,13 @@ ul {
 }
 #isteLogo {
   padding: 20px;
-  width: 180px;
+  width: calc(
+    100px + (160 - 100) * ((100vw - 320px) / (1280 - 320))
+  ) !important;
   margin-top: 50px;
 }
 #main {
-  height: 100vh;
+  /* height: 180vh; */
   width: 100%;
 }
 
@@ -234,6 +252,16 @@ ul {
 .eventNames button:hover {
   padding: 200px !important;
   background-color: cornflowerblue;
+}
+.eventNames .button {
+  text-shadow: 0 0 0.5rem rgb(7, 148, 255), 0 0 0.5rem rgb(7, 148, 255),
+    0 0 1rem rgb(7, 148, 255), 0 0 1rem rgb(7, 148, 255);
+  color: rgba(245, 245, 245, 0.912);
+  /* color: #08f !important; */
+  /* text-shadow: 2px 0 0rem rgb(104, 173, 234), 0px 2px 2rem rgb(104, 173, 234), 0 3px 0rem #08f, 0 0 1rem #08f; */
+  letter-spacing: 3px;
+  box-shadow: 0 0 0.5rem #fff, inset 0 0 0.5rem #fff, 0 0 2rem #08f,
+    inset 0 0 2rem #08f;
 }
 .navbar {
   height: 15%;
@@ -353,7 +381,6 @@ hr {
   font-size: calc(
     10px + (20 - 10) * ((100vw - 320px) / (1280 - 320))
   ) !important;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
   padding: 2rem;
   border-radius: 5px;
   font-family: "nooa";
@@ -377,8 +404,8 @@ li {
 
   text-shadow: 1px -1px 0 #42afac, -1px -1px 0 #0eafff;
 }
-#svceLogo:nth-of-type(1) {
-  width: 10%;
+#svceLogo:nth-of-type(3) {
+  width: calc(30px + (150 - 30) * ((100vw - 320px) / (1280 - 320))) !important;
   margin-top: calc(100px + 0.8vw);
 }
 #text4 sup {
@@ -554,7 +581,13 @@ time {
   font-size: 30px;
   /* margin: 2rem 2rem; */
 }
-
+#prob #text_reged:nth-of-type(odd) {
+  color: #000000;
+}
+#prob #text_reged:nth-of-type(even) {
+  border: 4px solid #000000;
+  padding: calc(2px + (8 - 2) * ((100vw - 320px) / (1280 - 320))) !important;
+}
 #btn-reged {
   font-size: 20px;
   border: 0.1rem solid;
@@ -680,10 +713,7 @@ time {
   margin-bottom: 0;
 }
 .eventInfo {
-  position: absolute;
   margin-top: 30px;
-  left: 0;
-  right: 0px;
   padding: 10px;
   font-size: 16px;
   font-family: nooa;
@@ -696,7 +726,7 @@ time {
 } */
 .text_container {
   position: relative;
-  padding: 0 10rem 8rem;
+  /* padding: 0 10rem 8rem; */
   background: rgba(96, 94, 94, 0.4);
   margin: 4rem 0;
   border-radius: 20px;
@@ -960,6 +990,14 @@ time {
     left: -289px;
   }
 }
+@media screen and (max-width: 768px) {
+  #svceLogo {
+    margin: 0 40px 0 20px !important;
+  }
+  #isteLogo {
+    margin: unset;
+  }
+}
 @media screen and (min-width: 650px) and (max-width: 767px) {
   .navbar-collapse {
     position: absolute;
@@ -1009,6 +1047,13 @@ time {
   #svceLogo {
     transform: scale(1.8);
     padding: unset;
+    margin: unset;
+  }
+  #svceLogo:nth-of-type(3) {
+    margin-top: unset;
+  }
+  #isteLogo {
+    margin: unset;
   }
   #navbarNav {
     margin-right: -80px;

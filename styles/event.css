@@ -40,8 +40,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 60px;
-  background: center center / auto 110% no-repeat rgba(7, 167, 192, 0.734);
+  padding: 100px;
+  /* background: center center / auto 110% no-repeat rgba(7, 167, 192, 0.734); */
+  background-color: rgb(10, 10, 10);
   color: rgb(255, 255, 255);
   font-size: 25px;
   cursor: pointer;
@@ -50,6 +51,16 @@
   height: 250px;
   border-radius: 5px;
   box-shadow: #084066 0px 0px 10px 0px;
+  position: relative;
+}
+#session-info {
+  text-shadow: 0 0 0.5rem rgb(155, 15, 115), 0 0 0.5rem rgb(155, 15, 115),
+    0 0 1rem rgb(155, 15, 115), 0 0 1rem rgb(155, 15, 115);
+  /* color: rgb(255, 0, 212) !important; */
+  position: absolute;
+  bottom: 30px;
+  font-size: 20px;
+  color: rgba(245, 245, 245, 0.912);
 }
 .eventNames {
   margin-top: 30px;
