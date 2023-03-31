@@ -65,6 +65,13 @@
   
   
   <body style="height: 100%">
+    <div id="loader-overlay">
+      <div class="loader"></div>
+    </div>
+    <script>window.addEventListener("load", function() {
+      console.log('loaded');
+      document.querySelector("body").classList.add('loaded');
+    })</script>
     <div id="preloader" style="display: none"></div>
     <div id="main">
       <header>

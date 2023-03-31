@@ -322,6 +322,15 @@ body::-webkit-scrollbar-thumb {
 #text4 {
   text-shadow: 0 0 0.2rem rgb(255, 7, 7);
 }
+.popup-body h2,
+.popup-body ul li {
+  text-shadow: 0 0 0.1rem rgb(255, 7, 7);
+}
+.popup-header {
+  background: #000;
+  box-shadow: 0 0 0.5rem #fff, inset 0 0 0.5rem #fff, 0 0 1rem #00ff00,
+    inset 0 0 2rem #00ff00;
+}
 .footer-dark {
   background-color: var(--neonBG);
 }
@@ -343,6 +352,7 @@ body::-webkit-scrollbar-thumb {
   text-shadow: 0 0 0.2rem rgb(255, 7, 7);
 }
 .text_container {
+  padding: 20px;
   background-color: var(--neonBG) !important;
   box-shadow: 0.2rem 0.21rem 0.8rem #fff, inset 0.2rem 0.21rem 0.8rem #fff,
     0 0 1rem #ff007f, inset 0 0 1rem #ff007f;
@@ -352,6 +362,15 @@ body::-webkit-scrollbar-thumb {
   box-shadow: 0.2rem 0.21rem 0.2rem #fff, inset 0.2rem 0.21rem 0.2rem #fff,
     0 0 0.7rem #ff007f, inset 0 0 0.7rem #ff007f;
 }
+.popup-body {
+  box-shadow: 0 0 0.5rem #fff, inset 0 0 0.5rem #fff, 0 0 2rem #08f,
+    inset 0 0 2rem #08f;
+  background-color: var(--neonBG);
+
+  margin-top: 10px;
+  color: white;
+}
+
 @keyframes glow2 {
   0% {
     box-shadow: 0.2rem 0.21rem 0.8rem #fff, inset 0.2rem 0.21rem 0.8rem #fff,
@@ -406,6 +425,42 @@ body::-webkit-scrollbar-thumb {
       inset 0 0 1rem rgb(255, 0, 0);
   }
 }
+#loader-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #08f;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Hide the loader once the page is fully loaded */
+.loaded #loader-overlay {
+  display: none;
+}
+
 .register-info {
   box-shadow: 0 0 0.5rem #fff, inset 0 0 0.5rem #fff, 0 0 1rem rgb(255, 0, 0),
     inset 0 0 1rem rgb(255, 0, 0);
@@ -900,7 +955,7 @@ time {
 .text-center:nth-child(2) {
   font-family: nooa;
   font-size: calc(
-    20px + (33 - 20) * ((100vw - 320px) / (1280 - 320))
+    16px + (33 - 16) * ((100vw - 320px) / (1280 - 320))
   ) !important;
   font-weight: unset;
   padding-bottom: 70px;
