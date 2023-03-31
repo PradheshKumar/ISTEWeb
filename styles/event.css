@@ -78,7 +78,6 @@
   align-content: center;
 }
 .eventCont {
-  margin-top: 40px;
   padding: 100px 20px 50px 20px;
   display: flex;
   flex-direction: column;

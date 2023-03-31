@@ -50,10 +50,6 @@
   ) !important;
   text-align: center;
 }
-.clock-box div,
-.clock-box span {
-  color: black;
-}
 .registerCont button {
   /* width: 20%; */
   font-size: calc(
@@ -61,8 +57,8 @@
   ) !important;
   color: rgb(255, 255, 255);
   margin-top: 1.5rem;
-  background: linear-gradient(0deg, rgba(84, 99, 133, 0.68) 11.5%, #62cdff);
+  /* background: linear-gradient(0deg, rgba(84, 99, 133, 0.68) 11.5%, #62cdff); */
   border-radius: 10px;
   padding: 1rem;
-  box-shadow: -2px -3px 20px 1px rgba(0, 0, 0, 0.75);
+  /* box-shadow: -2px -3px 20px 1px rgba(0, 0, 0, 0.75); */
 }

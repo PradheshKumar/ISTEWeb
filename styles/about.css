@@ -52,7 +52,7 @@
   left: 50%;
   transform: translate(-50%, 0);
   border-radius: 50%;
-  border: 6px solid rgb(18, 28, 210);
+  /* border: 6px solid rgb(18, 28, 210); */
   /* Use a clip-path to hide and show the bits you want */
   clip-path: polygon(0 0, 50% 50%, 100% 0);
 }
