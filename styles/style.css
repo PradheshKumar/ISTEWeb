@@ -1136,6 +1136,11 @@ time {
     margin-bottom: 24px;
   }
 }
+@media screen and (max-height: 640px) {
+  .eventContact {
+    position: relative !important;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 899px) {
   #svceLogo {
     transform: scale(1.8);

@@ -11,32 +11,38 @@ let body1 = ` <h2>Guidelines</h2><ul><li>Team size: Maximum of 4 members</li><li
   body3 = `<h2>Guidelines</h2><ul><li>Team size: Maximum of 4 members</li><li>Prepare the poster with the template given.</li><li> Presentation time : 8 minutes  </li><li> Q&A Session :2 minutes</li></ul><div class="eventContact"><p>For Queries Contact:</p><p>Subasree S - Event Coordinator</p><p><i class="fas fa-phone"></i>+91 9123559164</p><p><i class="far fa-envelope"></i>2020bt0569@svce.ac.in</p></div>`,
   body4 = `<div class="eventContact"><p>For Queries Contact:</p><p> K S Nithishwaran  - Event Coordinator</p><p><i class="fas fa-phone"></i>+91 6382587302</p><p><i class="far fa-envelope"></i>2020bt0593@svce.ac.in</p></div>`;
 buttons.forEach((button, i) => {
-  button.addEventListener("mouseover", () => {
-    let title = button.textContent;
-    let body;
-    // document.querySelector("#about").style = "visibility:hidden";
-    if (i === 0) {
-      body = body1;
-    } else if (i === 1) {
-      body = body2;
-    } else if (i === 2) {
-      body = body3;
-    } else if (i === 3) {
-      body = body4;
-    }
-    title = title.split("AN")[0];
-    title = title.split("FN")[0];
-    popupTitle.textContent = title;
-    popupBody.innerHTML = body;
-    popup.style.display = "flex";
-    window.addEventListener("click", (e) => {
-      console.log(e.target.parentNode.classList);
-      if (!e.target.parentNode.classList.contains("eventCont")) {
-        return;
+  let timer;
+  button.addEventListener("mouseenter", () => {
+    timer = setTimeout(function () {
+      let title = button.textContent;
+      let body;
+      // document.querySelector("#about").style = "visibility:hidden";
+      if (i === 0) {
+        body = body1;
+      } else if (i === 1) {
+        body = body2;
+      } else if (i === 2) {
+        body = body3;
+      } else if (i === 3) {
+        body = body4;
       }
-      popup.style.display = "none";
-      document.querySelector("#about").style = "";
-    });
+      title = title.split("AN")[0];
+      title = title.split("FN")[0];
+      popupTitle.textContent = title;
+      popupBody.innerHTML = body;
+      popup.style.display = "flex";
+      window.addEventListener("click", (e) => {
+        console.log(e.target.parentNode.classList);
+        if (!e.target.parentNode.classList.contains("eventCont")) {
+          return;
+        }
+        popup.style.display = "none";
+        document.querySelector("#about").style = "";
+      });
+    }, 500);
+  });
+  button.addEventListener("mouseleave", () => {
+    clearTimeout(timer);
   });
 });
 popupClose.addEventListener("click", () => {
