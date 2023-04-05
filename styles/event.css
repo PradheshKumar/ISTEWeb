@@ -20,21 +20,22 @@
   /* color: #285d80 !important; */
 }
 .eventContact {
+  padding: 0px 0px 30px 0px;
+  /* position: absolute; */
+  bottom: 0px;
+  width: 100%;
+  /* left: 0px;
+  right: 0px; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.eventTemp {
   padding: 0px 0px 30px 50px;
   position: absolute;
   bottom: 0px;
-  left: 0px;
-}
-.popup-body button {
-  background-color: #285d80;
-  color: white;
-  font-size: 20px;
-  cursor: pointer;
-  margin: 15px;
-  width: 120px;
-  height: 50px;
-  border-radius: 5px;
-  box-shadow: #50a6df 0px 0px 10px 0px;
+  right: 0px;
 }
 .button {
   display: flex;
@@ -159,7 +160,11 @@
   flex: 1;
   font-size: 18px;
   padding: 30px;
+  padding-bottom: 0px !important;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .popup-close {

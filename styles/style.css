@@ -333,6 +333,19 @@ body::-webkit-scrollbar-thumb {
   box-shadow: 0 0 0.5rem #fff, inset 0 0 0.5rem #fff, 0 0 1rem #00ff00,
     inset 0 0 2rem #00ff00;
 }
+.eventContact a {
+  text-decoration: none;
+  color: white;
+  box-shadow: 0 0 0.2rem #fff, inset 0 0 0.2rem #fff, 0 0 1.2rem rgb(255, 7, 7),
+    inset 0 0 1.2rem rgb(255, 7, 7);
+  border: white;
+  background-color: var(--neonBG);
+  padding: 10px;
+  margin: 10px;
+  letter-spacing: 1.5px;
+  animation: glow 3s ease-in-out infinite;
+  text-shadow: 0 0 0.2rem rgb(255, 7, 7);
+}
 .footer-dark {
   background-color: var(--neonBG);
 }
