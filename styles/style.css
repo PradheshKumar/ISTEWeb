@@ -43,6 +43,9 @@ body {
   );
   scroll-behavior: smooth;
 }
+.text_container {
+  padding: calc(20px + (50 - 20) * ((100vw - 320px) / (1280 - 320))) !important;
+}
 p {
   margin: 0;
 }
@@ -835,6 +838,7 @@ time {
   /* margin: 2rem 2rem; */
 }
 #prob #text_reged:nth-of-type(odd) {
+  margin-top: 60px;
   color: #ffffff;
 }
 #prob #text_reged:nth-of-type(even) {
