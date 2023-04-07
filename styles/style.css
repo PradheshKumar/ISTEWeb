@@ -346,6 +346,13 @@ body::-webkit-scrollbar-thumb {
   animation: glow 3s ease-in-out infinite;
   text-shadow: 0 0 0.2rem rgb(255, 7, 7);
 }
+.eventDet {
+  font-family: nooa;
+  text-shadow: 0 0 0.2rem rgb(255, 7, 7);
+  font-size: calc(
+    10px + (20 - 10) * ((100vw - 320px) / (1280 - 320))
+  ) !important;
+}
 .footer-dark {
   background-color: var(--neonBG);
 }
