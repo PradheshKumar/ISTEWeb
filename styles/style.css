@@ -838,7 +838,9 @@ time {
   /* margin: 2rem 2rem; */
 }
 #prob #text_reged:nth-of-type(odd) {
-  margin-top: 60px;
+  margin-top: calc(
+    30px + (60 - 30) * ((100vw - 320px) / (1280 - 320))
+  ) !important;
   color: #ffffff;
 }
 #prob #text_reged:nth-of-type(even) {
