@@ -376,6 +376,24 @@ body::-webkit-scrollbar-thumb {
 #prob #text_reged:nth-of-type(n) {
   text-shadow: 0 0 0.2rem rgb(255, 7, 7);
 }
+.offBearers {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+.offBearers button {
+  text-decoration: none;
+  color: white;
+  box-shadow: 0 0 0.2rem #fff, inset 0 0 0.2rem #fff, 0 0 1.2rem rgb(255, 7, 7),
+    inset 0 0 1.2rem rgb(255, 7, 7);
+  border: white;
+  background-color: var(--neonBG);
+  padding: calc(10px + (20 - 10) * ((100vw - 320px) / (1280 - 320))) !important;
+  margin: 10px;
+  letter-spacing: 1.5px;
+  animation: glow 3s ease-in-out infinite;
+  text-shadow: 0 0 0.2rem rgb(255, 7, 7);
+}
 .text_container {
   padding: 20px;
   background-color: var(--neonBG) !important;
@@ -387,7 +405,11 @@ body::-webkit-scrollbar-thumb {
   box-shadow: 0.2rem 0.21rem 0.2rem #fff, inset 0.2rem 0.21rem 0.2rem #fff,
     0 0 0.7rem #ff007f, inset 0 0 0.7rem #ff007f;
 }
+::-webkit-scrollbar {
+  width: 0;
+}
 .popup-body {
+  overflow: scroll;
   box-shadow: 0 0 0.5rem #fff, inset 0 0 0.5rem #fff, 0 0 2rem #08f,
     inset 0 0 2rem #08f;
   background-color: var(--neonBG);
@@ -2618,3 +2640,41 @@ time {
     box-shadow: -2px -3px 20px 1px rgba(0, 0, 0, 0.75);
   }
 }
+table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 800px;
+  font-family: "Roboto", sans-serif;
+  margin: 0 auto;
+  font-size: calc(8px + (13 - 8) * ((100vw - 420px) / (1280 - 420))) !important;
+}
+
+th,
+td {
+  font-family: "nooa";
+  border: 1px solid rgb(0, 0, 0);
+  box-shadow: 0 0 0.1rem #fff, inset 0 0 0.1rem #fff, 0 0 0.2rem rgb(255, 0, 0),
+    inset 0 0 0.2rem rgb(255, 0, 0);
+  padding: 8px;
+  text-align: center;
+}
+td b {
+  font-family: "nooa";
+  text-transform: uppercase;
+}
+
+th {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--neonBG);
+  text-transform: uppercase;
+}
+
+tr:nth-child(even) {
+  background-color: var(--neonBG);
+}
+
+/* @media (max-width: 600px) {
+  table {
+    font-size: 7px;
+  }
+} */
