@@ -365,7 +365,7 @@ body::-webkit-scrollbar-thumb {
   font-family: nooa;
   text-shadow: 0 0 0.1rem rgb(255, 7, 7);
   font-size: calc(
-    11px + (30 - 11) * ((100vw - 320px) / (1280 - 320))
+    11px + (25 - 11) * ((100vw - 320px) / (1280 - 320))
   ) !important;
 }
 .footer-dark {
