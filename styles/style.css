@@ -198,7 +198,7 @@ body::-webkit-scrollbar-thumb {
 }
 #svceLogo:nth-of-type(2) {
   width: calc(
-    100px + (500 - 100) * ((100vw - 320px) / (1280 - 320))
+    140px + (500 - 140) * ((100vw - 320px) / (1280 - 320))
   ) !important;
 }
 .navbar-brand {
@@ -695,7 +695,7 @@ li {
   text-shadow: 1px -1px 0 #42afac, -1px -1px 0 #0eafff;
 }
 #svceLogo:nth-of-type(3) {
-  width: calc(30px + (120 - 30) * ((100vw - 320px) / (1280 - 320))) !important;
+  width: calc(60px + (120 - 60) * ((100vw - 320px) / (1280 - 320))) !important;
   margin-top: calc(100px + 0.8vw);
 }
 #text4 sup {
@@ -1059,6 +1059,17 @@ time {
     margin: unset;
   }
 }
+@media screen and (max-width: 730px) {
+  .navbar {
+    padding-top: unset;
+  }
+  #svceLogo:nth-of-type(2) {
+    margin: unset;
+  }
+  .text_container {
+    margin: 1rem 0;
+  }
+}
 @media screen and (min-width: 1285px) and (max-width: 1515px) {
   * {
   }
@@ -1124,13 +1135,13 @@ time {
   }
 }
 @media screen and (min-width: 1000px) and (max-width: 1049px) {
-  #svceLogo {
+  /* #svceLogo {
     transform: scale(1.5) !important;
-  }
+  } */
 }
 @media screen and (min-width: 900px) and (max-width: 1049px) {
   #svceLogo {
-    transform: scale(2);
+    /* transform: scale(2); */
     padding: unset;
   }
   #navbarNav {
@@ -1209,7 +1220,7 @@ time {
 }
 @media screen and (min-width: 768px) and (max-width: 899px) {
   #svceLogo {
-    transform: scale(1.8);
+    /* transform: scale(1.8); */
     padding: unset;
   }
   #navbarNav {
@@ -1290,7 +1301,7 @@ time {
 }
 @media screen and (max-width: 768px) {
   #svceLogo {
-    margin: 0 40px 0 20px !important;
+    margin: 0 0px 0 0px !important;
   }
   #isteLogo {
     margin: unset;
@@ -1343,7 +1354,7 @@ time {
     flex-wrap: nowrap;
   }
   #svceLogo {
-    transform: scale(1.8);
+    /* transform: scale(1.8); */
     padding: unset;
     margin: unset;
   }
@@ -1491,7 +1502,7 @@ time {
     flex-wrap: nowrap;
   }
   #svceLogo {
-    transform: scale(1.8);
+    /* transform: scale(1.8); */
     padding: unset;
   }
   #navbarNav {
