@@ -84,6 +84,60 @@ body::-webkit-scrollbar-thumb {
   font-family: nooa;
   font-size: 15px;
 }
+.payCont {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.payText {
+  text-shadow: 0 0 0.2rem rgb(155, 15, 115), 0 0 0.2rem rgb(155, 15, 115);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: nooa;
+  margin-top: calc(
+    12px + (20 - 12) * ((100vw - 320px) / (1280 - 320))
+  ) !important;
+  padding: calc(20px + (25 - 20) * ((100vw - 320px) / (1280 - 320))) !important;
+  font-size: calc(
+    10px + (23 - 10) * ((100vw - 320px) / (1280 - 320))
+  ) !important;
+}
+.payText b {
+  text-shadow: 0 0 0.2rem rgb(155, 15, 115), 0 0 0.2rem rgb(155, 15, 115);
+  font-family: nooa;
+  font-size: calc(
+    12px + (25 - 12) * ((100vw - 320px) / (1280 - 320))
+  ) !important;
+  font-weight: bolder;
+  letter-spacing: 1.5px;
+}
+.qrcode {
+  max-width: 23%;
+  padding: calc(20px + (25 - 20) * ((100vw - 320px) / (1280 - 320))) !important;
+  box-shadow: 0 0 0.5rem #fff, inset 0 0 0.5rem #fff, 0 0 1rem rgb(255, 0, 0),
+    inset 0 0 1rem rgb(255, 0, 0);
+  height: auto;
+}
+@media screen and (max-width: 900px) {
+  .qrcode {
+    max-width: 30%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .qrcode {
+    max-width: 50%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .qrcode {
+    max-width: 60%;
+  }
+}
+
 .contact-info {
   margin-bottom: 20px;
   display: flex;
@@ -305,10 +359,10 @@ body::-webkit-scrollbar-thumb {
 .registerCont button {
   text-shadow: 0 0 0.5rem rgb(255, 1, 1), 0 0 0.5rem rgb(255, 1, 1),
     0 0 0.3rem rgb(255, 1, 1), 0 0 0.3rem rgb(255, 1, 1);
-  box-shadow: 0 0 0.5rem #fff, inset 0 0 0.5rem #fff, 0 0 1rem #00ff00,
-    inset 0 0 1rem #00ff00;
+  box-shadow: 0 0 0.3rem #fff, inset 0 0 0.3rem #fff, 0 0 0.5rem #00ff00,
+    inset 0 0 0.5rem #00ff00;
   background-color: var(--neonBG);
-  animation: glow1 3s ease-in-out infinite;
+  /* animation: glow1 3s ease-in-out infinite; */
 }
 .timeline ul li {
   text-shadow: 0 0 0.2rem rgb(255, 1, 1), 0 0 0.2rem rgb(255, 1, 1),
@@ -2584,7 +2638,7 @@ time {
     /* background: linear-gradient(0deg, rgba(84, 99, 133, 0.68) 11.5%, #62cdff); */
     border-radius: 10px;
     padding: 1rem;
-    box-shadow: -2px -3px 20px 1px rgba(0, 0, 0, 0.75);
+    /* box-shadow: -2px -3px 20px 1px rgba(0, 0, 0, 0.75); */
   }
 }
 @media screen and (max-width: 560px) {
@@ -2620,7 +2674,7 @@ time {
     /* background: linear-gradient(0deg, rgba(84, 99, 133, 0.68) 11.5%, #62cdff); */
     border-radius: 10px;
     padding: 0.7rem;
-    box-shadow: -2px -3px 20px 1px rgba(0, 0, 0, 0.75);
+    /* box-shadow: -2px -3px 20px 1px rgba(0, 0, 0, 0.75); */
   }
 }
 @media screen and (max-width: 685px) {
@@ -2654,7 +2708,7 @@ time {
     flex-direction: column;
     align-items: center;
     align-items: center;
-    padding: 5px;
+    padding: 30px;
   }
 
   .registerCont button {
@@ -2664,7 +2718,7 @@ time {
     /* background: linear-gradient(0deg, rgba(84, 99, 133, 0.68) 11.5%, #62cdff); */
     border-radius: 10px;
     padding: 0.7rem;
-    box-shadow: -2px -3px 20px 1px rgba(0, 0, 0, 0.75);
+    /* box-shadow: -2px -3px 20px 1px rgba(0, 0, 0, 0.75); */
   }
 }
 table {
