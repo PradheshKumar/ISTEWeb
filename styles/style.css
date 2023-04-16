@@ -929,7 +929,7 @@ time {
 }
 #prob #text_reged:nth-of-type(even) {
   border: 1px solid #ffffff;
-  padding: calc(2px + (8 - 2) * ((100vw - 320px) / (1280 - 320))) !important;
+  padding: calc(5px + (8 - 5) * ((100vw - 320px) / (1280 - 320))) !important;
 }
 #btn-reged {
   font-size: 20px;
